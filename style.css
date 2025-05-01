@@ -36,6 +36,9 @@ a{
 .text-green{
     color: var(--color-green);
 }
+.w-fit-content{
+    width: fit-content;
+}
 .nav-link:hover{
     color: var(--color-corp);
 }
