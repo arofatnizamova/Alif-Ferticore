@@ -1,5 +1,7 @@
 :root{
     --color-corp: #FB8846;
+    --shadow:  0 4px 90px 0 rgba(0, 0, 0, 0.1);
+    --color-green: #54B458;
 }
 
 body{
@@ -18,6 +20,12 @@ a{
 }
 .fs-paragraph{
     font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+.fs-span{
+    font-size: 14px;
+}
+.box-shadow{
+    box-shadow: var(--shadow);
 }
 .nav-link:hover{
     color: var(--color-corp);
@@ -52,6 +60,31 @@ a{
 .img-banner{
     height: 70vh;
     width: 100%;
+}
+.number{
+    font-size: clamp(2.5rem, 2.25rem + 1.25vw, 3.75rem);
+    color: white;
+    background: var(--color-green);
+    padding: 2px 34px;
+    border-radius: 50%;
+}
+.hover-green{
+    transition: all 0.3s ease;
+}
+.hover-green:hover{
+    background: var(--color-green);
+}
+.hover-green:hover p{
+    color: white;
+}
+.hover-green:hover .number{
+    color: var(--color-green);
+    background: white;
+}
+.margin-custom{
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
 }
 @media (max-width: 1400px){
     .header-side-container{
