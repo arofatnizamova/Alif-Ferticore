@@ -1,0 +1,37 @@
+:root{
+    --color-corp: #FB8846;
+}
+
+
+
+body{
+    font-family: "Golos Text", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.nav-link{
+   transition: all 0.3s ease;
+}
+.nav-link:hover{
+    color: var(--color-corp);
+}
+.header-side-container{
+    width: 100%;
+    clip-path: polygon(42% 0, 100% 0, 100% 100%, 46% 100%);
+}
+.dropdown-toggle::after {
+    border: none;
+    content: "\F282";
+    font-family: 'bootstrap-icons';
+    font-size: 0.9rem;
+    margin-left: 0.3em;
+    vertical-align: middle;
+}
+@media (max-width: 1400px){
+    .header-side-container{
+        clip-path: polygon(32% 0, 100% 0, 100% 100%, 36% 100%);
+    }
+}
