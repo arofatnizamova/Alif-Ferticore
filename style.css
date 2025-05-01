@@ -15,17 +15,26 @@ a{
 .fs-title{
     font-size: clamp(1.875rem, 1.375rem + 2.5vw, 4.375rem);
 }
+.fs-title-2{
+    font-size: clamp(1.875rem, 1.725rem + 0.75vw, 2.625rem);
+}
 .nav-link{
    transition: all 0.3s ease;
 }
 .fs-paragraph{
     font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
+.fs-paragraph-2{
+    font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+}
 .fs-span{
     font-size: 14px;
 }
 .box-shadow{
     box-shadow: var(--shadow);
+}
+.text-green{
+    color: var(--color-green);
 }
 .nav-link:hover{
     color: var(--color-corp);
@@ -81,10 +90,14 @@ a{
     color: var(--color-green);
     background: white;
 }
-.margin-custom{
-    margin-top: -100px;
-    position: relative;
+.info-container{
+    left: 0;
+    top: -100px;
+    position: absolute;
     z-index: 2;
+}
+.pt-custom{
+    padding-top: 250px;
 }
 @media (max-width: 1400px){
     .header-side-container{
