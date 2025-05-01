@@ -2,8 +2,6 @@
     --color-corp: #FB8846;
 }
 
-
-
 body{
     font-family: "Golos Text", sans-serif;
 }
@@ -12,8 +10,14 @@ a{
     color: inherit;
     cursor: pointer;
 }
+.fs-title{
+    font-size: clamp(1.875rem, 1.375rem + 2.5vw, 4.375rem);
+}
 .nav-link{
    transition: all 0.3s ease;
+}
+.fs-paragraph{
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 .nav-link:hover{
     color: var(--color-corp);
@@ -29,6 +33,25 @@ a{
     font-size: 0.9rem;
     margin-left: 0.3em;
     vertical-align: middle;
+}
+.banner-info{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+}
+.btn{
+    border-radius: 16px;
+    padding: 10px;
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+.btn-corp{
+    background: var(--color-corp);
+    color: white;
+}
+.img-banner{
+    height: 70vh;
+    width: 100%;
 }
 @media (max-width: 1400px){
     .header-side-container{
