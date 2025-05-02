@@ -49,6 +49,9 @@ a{
 .bg-green{
     background: var(--color-green);
 }
+.bg-grey{
+    background: #F6F6F6;
+}
 .w-fit-content{
     width: fit-content;
 }
@@ -88,6 +91,10 @@ a{
 .btn-rounded{
     border-radius: 50px;
     background: white;
+}
+.btn-white{
+    background: white;
+    padding: 5px 10px;
 }
 .img-banner{
     height: 70vh;
@@ -166,6 +173,46 @@ a{
 }
 .bg-footer{
     background: #0B2735;
+}
+.side-link.active{
+    font-weight: 500;
+}
+.side-link{
+    transition: all 0.3s ease;
+}
+.side-link:hover{
+    font-weight: 500;
+}
+.pagination {
+    --bs-pagination-border-width: unset;
+    --bs-pagination-border-color: unset;
+    --bs-pagination-border-radius: unset;
+}
+.page-link{
+    color: rgba(0, 0, 0, 0.7);
+}
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: unset;
+    border-color: unset;
+    font-weight: 600;
+}
+.page-link:focus {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: unset;
+    box-shadow: unset;
+}
+.one-line{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.three-line{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 @media (max-width: 1400px){
     .header-side-container{
