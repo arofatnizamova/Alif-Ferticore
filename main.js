@@ -8,7 +8,7 @@ $(document).ready(function() {
         const options = {
             type: 'loop',
             // gap: '1rem',
-            autoplay: false,
+            autoplay: true,
         };
 
         let extraOptions = {};
@@ -32,17 +32,14 @@ $(document).ready(function() {
                     },
                 },
             };
-        } else if (slider.hasClass('tours')) {
+        } else if (slider.hasClass('watch-more')) {
             extraOptions = {
                 focus: 0,
                 interval: 4000,
                 pagination: false,
                 arrows: false,
-                perPage: 3.8, 
+                perPage: 3, 
                 breakpoints: {
-                    1600: {
-                        perPage: 3,
-                    },
                     990: {
                         perPage: 2.3,
                     },
