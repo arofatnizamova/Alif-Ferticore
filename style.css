@@ -124,6 +124,17 @@ a{
 .w-lg-70{
     width: 70%;
 }
+.info-container-2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.title-position{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 @media (max-width: 1400px){
     .header-side-container{
         clip-path: polygon(32% 0, 100% 0, 100% 100%, 36% 100%);
@@ -159,6 +170,11 @@ a{
     .w-lg-70{
         width: 100%;
     }
+    .info-container-2{
+        position: static;
+        top: unset;
+        transform: unset;
+    }
 }
 @media (max-width: 576px){
     .logo{
@@ -170,5 +186,13 @@ a{
     .men-img{
         width: 70%;
 
+    }
+    .lh-sm-1{
+        line-height: 1.3;
+    }
+    .title-position{
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
