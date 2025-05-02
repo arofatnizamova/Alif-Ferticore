@@ -60,6 +60,9 @@ a{
     left: 0;
     width: 100%;
 }
+.navbar-toggler-icon {
+    background-image: url('icons/burger.svg');
+}
 .btn{
     border-radius: 16px;
     padding: 10px;
@@ -102,8 +105,54 @@ a{
 .pt-custom{
     padding-top: 250px;
 }
+.box-information{
+    border-radius: var(--bs-border-radius-xxl) !important;
+    background: white;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
 @media (max-width: 1400px){
     .header-side-container{
         clip-path: polygon(32% 0, 100% 0, 100% 100%, 36% 100%);
+    }
+}
+@media (max-width: 990px){
+    .logo{
+        width: 250px;
+    }
+    .info-container{
+        left: unset;
+        top: unset;
+        position: static;
+    }
+    .pt-custom{
+        padding-top: 40px;
+    }
+    .box-information{
+        border-radius: unset;
+        background: unset;
+        overflow: visible;
+        box-shadow: unset;
+    }
+    .hover-green{
+        border-radius: var(--bs-border-radius-xxl) !important;
+    }
+    .number{
+        padding: 2px 25px;
+    }
+    .bg-sm-none{
+        background: none !important;
+    }
+}
+@media (max-width: 576px){
+    .logo{
+        width: 167px;
+    }
+    .img-banner{
+        height: 400px;
+    }
+    .men-img{
+        width: 70%;
+
     }
 }
