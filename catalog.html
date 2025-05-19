@@ -20,18 +20,31 @@
 <body>
     <header>
         <div class="header-side-container d-xl-block d-none bg-black text-white py-2">
-            <div class="container d-flex justify-content-end gap-5">
-                <ul class="list-unstyled d-flex fs-5  gap-4 mb-0">
-                    <li>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-telegram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8">
+                        <div class="w-100 h-100 d-flex justify-content-between align-items-center">
+                            <a href="#" class="d-flex align-items-center">
+                                <i class="bi bi-filetype-pdf fs-3 me-2"></i>
+                                <span class="fw-light fs-6">Скачать каталог продукции в PDF</span>
+                            </a>
+                            <ul class="list-unstyled d-flex fs-4  gap-4 mb-0">
+                                <li>
+                                    <a href="#"><i class="bi bi-wechat"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-telegram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi bi-whatsapp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg w-100">
@@ -50,23 +63,37 @@
                     <div class="col-xl-9 col-lg-10">
                         <div class="w-100 h-100 d-flex align-items-end">
                             <div class="collapse align-items-end navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav fw-medium bg-blur pt-2 gap-2  ms-auto align-items-lg-center align-items-start h-100">
+                                <ul class="navbar-nav fw-medium bg-blur pt-2 gap-2  ms-auto align-items-center h-100">
                                     <li class="nav-item">
                                         <a href="index.html" class="nav-link pb-0">
                                             Главная
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="about.html" class="nav-link pb-0">О компании</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index.html#advantages" class="nav-link pb-0">Преимущества</a>
+                                        <div class="dropdown">
+                                            <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                О компании
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="about.html">О нас</a></li>
+                                              <li><a class="dropdown-item" href="#">Преимущества</a></li>
+                                              <li><a class="dropdown-item" href="#">География продаж</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="nav-item">
                                         <a href="catalog.html" class="nav-link pb-0">Продукция</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html#connection" class="nav-link pb-0">Сотрудничество</a>
+                                        <div class="dropdown">
+                                            <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Сотрудничество
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Партнерам</a></li>
+                                              <li><a class="dropdown-item" href="#">Инвесторам</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="nav-item">
                                         <a href="index.html#contacts" class="nav-link pb-0">Контакты</a>
@@ -89,12 +116,13 @@
         </nav>
     </header>
     <main>
-        <div class="py-lg-5 py-3">
+        <section class="py-lg-5 py-3">
             <div class="container">
-                <div class="row gy-4 position-relative">
-                    <div class="col-lg-4 sticky-top" style="height: fit-content;">
-                        <div class="w-100 h-100 p-lg-5 p-4 rounded-4 bg-grey">
-                            <ul class="list-unstyled fs-paragraph">
+                <h3 class="fs-title-2 mb-lg-5 mb-3">Продукция</h3>
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <div class="w-100  p-xl-5 p-4 mb-lg-5 mb-3 rounded-4 bg-grey">
+                            <ul class="list-unstyled fs-paragraph-2">
                                 <li class="mb-2">
                                     <a href="#" class="side-link active">
                                         Азотные удобрения
@@ -132,13 +160,66 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="w-100   p-xl-5 p-4 mb-lg-5 mb-3 rounded-4 bg-grey">
+                            <p class="fw-semibold fs-paragraph">Нужна консультация?</p>
+                            <p>Звоните нам:</p>
+                            <div class="fs-paragraph-2 d-flex align-items-center">
+                                <div class="bg-green icon-bg me-3">
+                                    <img src="icons/catalog/1.svg" alt="" class="img-fluid  icon-size">
+                                </div>
+                                <div class="fw-medium  d-flex flex-column justify-content-between">
+                                    <a href="tel:+971528567123">+971 52 856 7123</a>
+                                    <a href="tel:+971521159550">+971 52 115 9550</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <ul class="list-unstyled d-flex justify-content-between px-4"> 
+                                <li>
+                                    <div class="bg-green icon-bg">
+                                        <img src="icons/catalog/2.svg" alt="" class="img-fluid icon-size">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bg-green icon-bg">
+                                        <img src="icons/catalog/3.svg" alt="" class="img-fluid icon-size">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bg-green icon-bg">
+                                        <img src="icons/catalog/4.svg" alt="" class="img-fluid icon-size">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bg-green icon-bg">
+                                        <img src="icons/catalog/5.svg" alt="" class="img-fluid icon-size">
+                                    </div>
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>По всем вопросам</p>
+                            <div class="fs-paragraph-2 d-flex align-items-center">
+                                <div class="bg-green icon-bg me-3">
+                                    <img src="icons/catalog/6.svg" alt="" class="img-fluid  icon-size">
+                                </div>
+                                <div class="fw-medium d-flex flex-column text-break fs-6 justify-content-between">
+                                    <a href="mailto:export@alifferticore.ae">export@alifferticore.ae</a>
+                                    <a href="mailto:alifferticoreexport@gmail.com">alifferticoreexport@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-green px-lg-5 px-4 py-3 text-white">
+                            <a href="#" class="d-flex align-items-center">
+                                <i class="bi bi-filetype-pdf fs-3 me-2"></i>
+                                <span class="fw-light fs-6">Скачать каталог продукции</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-lg-8">
                         <div class="w-100 h-100">
                             <div class="row gy-3">
                                 <div class="col-xxl-4 col-md-6">
                                     <div class="w-100 h-100 bg-grey rounded-4 p-3">
-                                        <div class="p-3 mb-2 rounded-4 bg-white">
+                                        <div class="p-3 mb-2 rounded-4 bg-white d-flex align-items-center justify-content-center">
                                             <img src="images/catalog/1.png" alt="" class="img-fluid object-fit-cover">
                                         </div>
                                         <p class="fw-semibold mb-0 fs-paragraph one-line">N 46,2</p>
@@ -148,7 +229,7 @@
                                 </div>
                                 <div class="col-xxl-4 col-md-6">
                                     <div class="w-100 h-100 bg-grey rounded-4 p-3">
-                                        <div class="p-3 mb-2 rounded-4 bg-white">
+                                        <div class="p-3 mb-2 rounded-4 bg-white d-flex align-items-center justify-content-center">
                                             <img src="images/catalog/1.png" alt="" class="img-fluid object-fit-cover">
                                         </div>
                                         <p class="fw-semibold mb-0 fs-paragraph one-line">N 46,2</p>
@@ -158,7 +239,7 @@
                                 </div>
                                 <div class="col-xxl-4 col-md-6">
                                     <div class="w-100 h-100 bg-grey rounded-4 p-3">
-                                        <div class="p-3 mb-2 rounded-4 bg-white">
+                                        <div class="p-3 mb-2 rounded-4 bg-white d-flex align-items-center justify-content-center">
                                             <img src="images/catalog/1.png" alt="" class="img-fluid object-fit-cover">
                                         </div>
                                         <p class="fw-semibold mb-0 fs-paragraph one-line">N 46,2</p>
@@ -168,7 +249,7 @@
                                 </div>
                                 <div class="col-xxl-4 col-md-6">
                                     <div class="w-100 h-100 bg-grey rounded-4 p-3">
-                                        <div class="p-3 mb-2 rounded-4 bg-white">
+                                        <div class="p-3 mb-2 rounded-4 bg-white d-flex align-items-center justify-content-center">
                                             <img src="images/catalog/1.png" alt="" class="img-fluid object-fit-cover">
                                         </div>
                                         <p class="fw-semibold mb-0 fs-paragraph one-line">N 46,2</p>
@@ -178,7 +259,7 @@
                                 </div>
                                 <div class="col-xxl-4 col-md-6">
                                     <div class="w-100 h-100 bg-grey rounded-4 p-3">
-                                        <div class="p-3 mb-2 rounded-4 bg-white">
+                                        <div class="p-3 mb-2 rounded-4 bg-white d-flex align-items-center justify-content-center">
                                             <img src="images/catalog/1.png" alt="" class="img-fluid object-fit-cover">
                                         </div>
                                         <p class="fw-semibold mb-0 fs-paragraph one-line">N 46,2</p>
@@ -188,7 +269,7 @@
                                 </div>
                                 <div class="col-xxl-4 col-md-6">
                                     <div class="w-100 h-100 bg-grey rounded-4 p-3">
-                                        <div class="p-3 mb-2 rounded-4 bg-white">
+                                        <div class="p-3 mb-2 rounded-4 bg-white d-flex align-items-center justify-content-center">
                                             <img src="images/catalog/1.png" alt="" class="img-fluid object-fit-cover">
                                         </div>
                                         <p class="fw-semibold mb-0 fs-paragraph one-line">N 46,2</p>
@@ -209,8 +290,94 @@
                         </ul>
                     </nav>
                 </div>
+                <hr>
             </div>
-        </div>
+        </section>
+        <section class="pb-lg-5 pb-3">
+            <div class="container">
+                <h3 class="fs-title-2 text-center mb-lg-5 mb-3">Экспедирование грузов</h3>
+                <div class="row justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="w-100 h-100">
+                            <p class="fs-paragraph-2">Мы предоставляем услуги по экспедированию грузов через наших надёжных партнёров. Это означает комплексный подход к организации перевозок: от подготовки документов до сопровождения и контроля доставки. В состав наших услуг входит:</p>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="w-100 h-100">
+                                        <ul class="list-unstyled fs-paragraph-2 fw-medium">
+                                            <li class="mb-3">
+                                                <div class="bg-light-gray py-3 rounded-4 px-3 d-flex align-items-center">
+                                                    <div class="bg-green icon-bg me-3">
+                                                        <img src="icons/catalog/7.svg" alt="" class="img-fluid  icon-size">
+                                                    </div>
+                                                    <p class="mb-0">Железнодорожные перевозки</p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="bg-light-gray py-3 rounded-4 px-3 d-flex align-items-center">
+                                                    <div class="bg-green icon-bg me-3">
+                                                        <img src="icons/catalog/8.svg" alt="" class="img-fluid  icon-size">
+                                                    </div>
+                                                    <p class="mb-0">Авиаперевозка</p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="bg-light-gray py-3 rounded-4 px-3 d-flex align-items-center">
+                                                    <div class="bg-green icon-bg me-3">
+                                                        <img src="icons/catalog/9.svg" alt="" class="img-fluid  icon-size">
+                                                    </div>
+                                                    <p class="mb-0">Морские перевозки</p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="bg-light-gray py-3 rounded-4 px-3 d-flex align-items-center">
+                                                    <div class="bg-green icon-bg me-3">
+                                                        <img src="icons/catalog/10.svg" alt="" class="img-fluid  icon-size">
+                                                    </div>
+                                                    <p class="mb-0">Автомобильные перевозки</p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="bg-light-gray py-3 rounded-4 px-3 d-flex align-items-center">
+                                                    <div class="bg-green icon-bg me-3">
+                                                        <img src="icons/catalog/11.svg" alt="" class="img-fluid  icon-size">
+                                                    </div>
+                                                    <p class="mb-0">Контейнерные перевозки</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="w-100 bg-light-gray fs-paragraph-2 p-3">
+                            <p class="fw-semibold">
+                                Отправить запрос
+                            </p>
+                            <p class="">Отправьте запрос на расчет стоимости и наши менеджеры свяжутся с вами в ближайшее время.</p>
+                            <form>
+                                <div class="row gy-3">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control-2 w-100" placeholder="Ваше имя *">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="email" class="form-control-2 w-100" placeholder="Email *">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="tel" class="form-control-2 w-100" placeholder="Телефон *">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea name="text" class="form-control-2 w-100" placeholder="Описание *"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-rectangle mt-3">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="py-lg-5 py-3 bg-footer text-white">
         <div class="container">
@@ -295,27 +462,27 @@
                     <div class="w-100 h-100">
                         <p class="fs-paragraph fw-semibold text-uppercase">Политика приватности</p>
                         <ul class="list-unstyled fs-paragraph-2">
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Защита интеллектуальной собственнсоти
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Официальное уведомление
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Политика листинга продуктов
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Политика и правила
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Сохранение целостности
                                 </a>

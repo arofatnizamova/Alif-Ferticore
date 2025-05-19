@@ -3,6 +3,7 @@
     --shadow:  0 4px 90px 0 rgba(0, 0, 0, 0.1);
     --shadow-2: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
     --color-green: #54B458;
+    --color-light: #F6F6F6;
 }
 
 body{
@@ -51,6 +52,9 @@ a{
 }
 .bg-grey{
     background: #F6F6F6;
+}
+.bg-light-gray{
+    background: var(--color-light);
 }
 .w-fit-content{
     width: fit-content;
@@ -218,6 +222,12 @@ a{
     background: var(--color-green);
     color: white;
 }
+.btn-rectangle{
+    background: var(--color-corp);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 50px;
+}
 .table {
     --bs-table-bg: unset;
     --bs-table-color: unset;
@@ -234,6 +244,18 @@ a{
 }
 .nav-link{
     color: rgba(0, 0, 0, 0.7);
+}
+.icon-size{
+    width: 24px;
+    height: 24px;
+}
+.icon-bg{
+    padding: 10px;
+    border-radius: 50%;
+}
+.form-control-2{
+    border: none;
+    padding: 10px 20px;
 }
 @media (min-width: 1400px) {
     .container-fluid {
