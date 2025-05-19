@@ -20,18 +20,31 @@
 <body>
     <header>
         <div class="header-side-container d-xl-block d-none bg-black text-white py-2">
-            <div class="container d-flex justify-content-end gap-5">
-                <ul class="list-unstyled d-flex fs-5  gap-4 mb-0">
-                    <li>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-telegram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8">
+                        <div class="w-100 h-100 d-flex justify-content-between align-items-center">
+                            <a href="#" class="d-flex align-items-center">
+                                <i class="bi bi-filetype-pdf fs-3 me-2"></i>
+                                <span class="fw-light fs-6">Скачать каталог продукции в PDF</span>
+                            </a>
+                            <ul class="list-unstyled d-flex fs-4  gap-4 mb-0">
+                                <li>
+                                    <a href="#"><i class="bi bi-wechat"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-telegram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi bi-whatsapp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg w-100">
@@ -57,16 +70,30 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="about.html" class="nav-link pb-0">О компании</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index.html#advantages" class="nav-link pb-0">Преимущества</a>
+                                        <div class="dropdown">
+                                            <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                О компании
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="about.html">О нас</a></li>
+                                              <li><a class="dropdown-item" href="#">Преимущества</a></li>
+                                              <li><a class="dropdown-item" href="#">География продаж</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="nav-item">
                                         <a href="catalog.html" class="nav-link pb-0">Продукция</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html#connection" class="nav-link pb-0">Сотрудничество</a>
+                                        <div class="dropdown">
+                                            <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Сотрудничество
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Партнерам</a></li>
+                                              <li><a class="dropdown-item" href="#">Инвесторам</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="nav-item">
                                         <a href="index.html#contacts" class="nav-link pb-0">Контакты</a>
@@ -90,7 +117,8 @@
     </header>
     <main>
         <section class="position-relative">
-            <img src="images/home-page/bg-banner.png" alt="" class="img-banner img-fluid object-fit-cover">
+            <img src="images/home-page/bg-banner.png" alt="" class="img-banner img-fluid object-fit-cover d-sm-block d-none">
+            <img src="images/home-page/bg-banner-mobile.png" alt="" class="img-banner img-fluid object-fit-cover d-sm-none d-block">
             <div class="text-white position-absolute banner-info">
                 <div class="container text-lg-start text-center">
                     <h2 class="fs-title">
@@ -205,53 +233,47 @@
         </section>
         <section class="py-lg-5 py-3">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-11">
-                        <div class="w-100 h-100">
-                            <h4 class="fs-paragraph text-center fw-semibold text-corp">Наша продукция</h4>
-                            <p class="fs-title-2 fw-semibold text-center mb-lg-5 w-lg-70 mx-auto mb-3 lh-1">Удобрения, которые работают: максимум урожая при минимальных затратах</p>
-                            <div class="slider-wrapper w-100">
+                <div class="w-100 h-100">
+                    <h4 class="fs-paragraph text-center fw-semibold text-corp mb-3">Наша продукция</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <p class="fs-paragraph-2 text-center mb-lg-5 mb-3 lh-1">Предлагаем разнообразные минеральные удобрения для сельскохозяйственного и промышленного применения.</p>
+                        </div>
+                    </div>
+                    <div class="slider-wrapper d-xl-none d-block w-100">
                                 <div class="splide production splide-slider">
                                     <div class="splide__track">
                                         <ul class="splide__list px-5">
                                             <li class="splide__slide py-5 px-4">
-                                                <div class="w-100 h-100 box-shadow-2 rounded-5">
+                                                <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
                                                     <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Азотные удобрения</p>
-                                                    <img src="images/home-page/production/1.png" alt="" class="img-fluid object-fit-cover">
-                                                    <div class="px-3 pt-3 pb-4">
-                                                        <p class="fs-span">Lorem ipsum dolor sit amet consectetur. Nisl ornare suspendisse facilisis sed adipiscing viverra feugiat. Consectetur interdum volutpat leo ut dui. Consectetur interdum volutpat leo ut dui.</p>
-                                                        <a href="#" class="btn btn-corp mt-lg-5 mt-3 px-5 mx-auto d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
-                                                    </div>
+                                                    <img src="images/home-page/fertilizers/1.png" alt="" class="img-fluid object-fit-cover">
+                                                    <p class="fs-span opacity-75 p-3">Источник основного элемента для роста растений, повышают урожайность и улучшают развитие зелёной массы.</p>
+                                                    <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
                                                 </div>
                                             </li>
                                             <li class="splide__slide py-5 px-4">
-                                                <div class="w-100 h-100 box-shadow-2 rounded-5">
+                                                <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
                                                     <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Фосфорные удобрения</p>
-                                                    <img src="images/home-page/production/2.png" alt="" class="img-fluid object-fit-cover">
-                                                    <div class="px-3 pt-3 pb-4">
-                                                        <p class="fs-span">Lorem ipsum dolor sit amet consectetur. Nisl ornare suspendisse facilisis sed adipiscing viverra feugiat. Consectetur interdum volutpat leo ut dui. Consectetur interdum volutpat leo ut dui.</p>
-                                                        <a href="#" class="btn btn-corp mt-lg-5 mt-3 px-5 mx-auto d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
-                                                    </div>
+                                                    <img src="images/home-page/fertilizers/2.png" alt="" class="img-fluid object-fit-cover">
+                                                    <p class="fs-span opacity-75 p-3">Минеральные или органические вещества, содержащие фосфор, необходимый для роста корней, цветения и плодоношения растений.</p>
+                                                    <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
                                                 </div>
                                             </li>
                                             <li class="splide__slide py-5 px-4">
-                                                <div class="w-100 h-100 box-shadow-2 rounded-5">
+                                                <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
                                                     <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Сложные удобрения</p>
-                                                    <img src="images/home-page/production/3.png" alt="" class="img-fluid object-fit-cover">
-                                                    <div class="px-3 pt-3 pb-4">
-                                                        <p class="fs-span">Lorem ipsum dolor sit amet consectetur. Nisl ornare suspendisse facilisis sed adipiscing viverra feugiat. Consectetur interdum volutpat leo ut dui. Consectetur interdum volutpat leo ut dui.</p>
-                                                        <a href="#" class="btn btn-corp mt-lg-5 mt-3 px-5 mx-auto d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
-                                                    </div>
+                                                    <img src="images/home-page/fertilizers/3.png" alt="" class="img-fluid object-fit-cover">
+                                                    <p class="fs-span opacity-75 p-3">Удобрения, содержащие сразу несколько основных питательных элементов (например, азот, фосфор и калий) в одном составе. </p>
+                                                    <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
                                                 </div>
                                             </li>
                                             <li class="splide__slide py-5 px-4">
-                                                <div class="w-100 h-100 box-shadow-2 rounded-5">
-                                                    <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Азотные удобрения</p>
-                                                    <img src="images/home-page/production/1.png" alt="" class="img-fluid object-fit-cover">
-                                                    <div class="px-3 pt-3 pb-4">
-                                                        <p class="fs-span">Lorem ipsum dolor sit amet consectetur. Nisl ornare suspendisse facilisis sed adipiscing viverra feugiat. Consectetur interdum volutpat leo ut dui. Consectetur interdum volutpat leo ut dui.</p>
-                                                        <a href="#" class="btn btn-corp mt-lg-5 mt-3 px-5 mx-auto d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
-                                                    </div>
+                                                <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
+                                                    <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Сода кальцинированная</p>
+                                                    <img src="images/home-page/fertilizers/4.png" alt="" class="img-fluid object-fit-cover">
+                                                    <p class="fs-span opacity-75 p-3">Химическое вещество (карбонат натрия), используемое в производстве стекла, моющих средств, бумаги и других промышленных процессов. </p>
+                                                    <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -265,7 +287,65 @@
                                         <i class="text-green bi bi-arrow-right-circle-fill fs-btn"></i>
                                     </button>
                                 </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row gy-4 d-xl-flex d-none justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
+                            <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Азотные удобрения</p>
+                            <img src="images/home-page/fertilizers/1.png" alt="" class="img-fluid object-fit-cover">
+                            <p class="fs-span opacity-75 p-3">Источник основного элемента для роста растений, повышают урожайность и улучшают развитие зелёной массы.</p>
+                            <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
+                            <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Фосфорные удобрения</p>
+                            <img src="images/home-page/fertilizers/2.png" alt="" class="img-fluid object-fit-cover">
+                            <p class="fs-span opacity-75 p-3">Минеральные или органические вещества, содержащие фосфор, необходимый для роста корней, цветения и плодоношения растений.</p>
+                            <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
+                            <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Сложные удобрения</p>
+                            <img src="images/home-page/fertilizers/3.png" alt="" class="img-fluid object-fit-cover">
+                            <p class="fs-span opacity-75 p-3">Удобрения, содержащие сразу несколько основных питательных элементов (например, азот, фосфор и калий) в одном составе. </p>
+                            <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
+                            <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Сода кальцинированная</p>
+                            <img src="images/home-page/fertilizers/4.png" alt="" class="img-fluid object-fit-cover">
+                            <p class="fs-span opacity-75 p-3">Химическое вещество (карбонат натрия), используемое в производстве стекла, моющих средств, бумаги и других промышленных процессов. </p>
+                            <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
+                            <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Кормовые фосфаты</p>
+                            <img src="images/home-page/fertilizers/5.png" alt="" class="img-fluid object-fit-cover">
+                            <p class="fs-span opacity-75 p-3">Источник легкоусвояемого фосфора и кальция для сбалансированного питания сельскохозяйственных животных.</p>
+                            <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
+                            <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Калийные удобрения</p>
+                            <img src="images/home-page/fertilizers/6.png" alt="" class="img-fluid object-fit-cover">
+                            <p class="fs-span opacity-75 p-3">Важный компонент для повышения урожайности, устойчивости растений к засухе и улучшения качества продукции.</p>
+                            <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 box-shadow-2 rounded-5 d-flex flex-column">
+                            <p class="px-3 mb-0 py-2 fw-semibold fs-paragraph">Комплексные удобрения</p>
+                            <img src="images/home-page/fertilizers/7.png" alt="" class="img-fluid object-fit-cover">
+                            <p class="fs-span opacity-75 p-3">Сбалансированная смесь основных питательных элементов (азота, фосфора и калия) для полноценного роста и развития растений.</p>
+                            <a href="#" class="btn btn-corp mt-auto mx-3 mb-4 d-block ">Открыть продукцию <i class="ms-auto bi bi-arrow-up-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -273,7 +353,7 @@
         </section>
         <section id="advantages" class="py-lg-5 py-3 position-relative">
             <img src="images/home-page/bg-banner-4.png" alt="" class="img-fluid object-fit-cover">
-            <h3 class="fs-paragraph title-position text-white fw-semibold">Наши преимущества</h3>
+            <h3 class="fs-title-2 title-position text-white fw-semibold">Наши преимущества</h3>
             <div class="info-container-2 w-100 mt-lg-0 mt-5">
                 <div class="container">
                     <div class="row g-4">
@@ -339,6 +419,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="pb-lg-5 pb-3">
+            <div class="container">
+                <h3 class="fs-title-2 text-center text-corp mb-3">Мы работаем по всему миру</h3>
+                <p class="fs-paragraph text-center fw-light mb-5">Мы осуществляем поставки удобрений по всему миру, обеспечивая стабильное и своевременное снабжение агропромышленных предприятий.</p>
+                <img src="images/home-page/map.png" alt="" class="img-fluid object-fit-cover">
             </div>
         </section>
         <section id="connection"  class="py-lg-5 py-3 px-sm-0 px-2">
@@ -506,27 +593,27 @@
                     <div class="w-100 h-100">
                         <p class="fs-paragraph fw-semibold text-uppercase">Политика приватности</p>
                         <ul class="list-unstyled fs-paragraph-2">
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Защита интеллектуальной собственнсоти
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Официальное уведомление
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Политика листинга продуктов
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Политика и правила
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Сохранение целостности
                                 </a>

@@ -60,7 +60,7 @@ a{
 }
 .header-side-container{
     width: 100%;
-    clip-path: polygon(42% 0, 100% 0, 100% 100%, 46% 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 36% 100%);
 }
 .dropdown-toggle::after {
     border: none;
@@ -235,6 +235,11 @@ a{
 .nav-link{
     color: rgba(0, 0, 0, 0.7);
 }
+@media (min-width: 1400px) {
+    .container-fluid {
+        max-width: 1650px;
+    }
+}
 @media (max-width: 1400px){
     .header-side-container{
         clip-path: polygon(32% 0, 100% 0, 100% 100%, 36% 100%);
@@ -281,7 +286,7 @@ a{
         width: 167px;
     }
     .img-banner{
-        height: 400px;
+        height: 300px;
     }
     .men-img{
         width: 70%;
