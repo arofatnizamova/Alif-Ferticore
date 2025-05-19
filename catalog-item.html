@@ -20,18 +20,31 @@
 <body>
     <header>
         <div class="header-side-container d-xl-block d-none bg-black text-white py-2">
-            <div class="container d-flex justify-content-end gap-5">
-                <ul class="list-unstyled d-flex fs-5  gap-4 mb-0">
-                    <li>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-telegram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8">
+                        <div class="w-100 h-100 d-flex justify-content-between align-items-center">
+                            <a href="#" class="d-flex align-items-center">
+                                <i class="bi bi-filetype-pdf fs-3 me-2"></i>
+                                <span class="fw-light fs-6">Скачать каталог продукции в PDF</span>
+                            </a>
+                            <ul class="list-unstyled d-flex fs-4  gap-4 mb-0">
+                                <li>
+                                    <a href="#"><i class="bi bi-wechat"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-telegram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi bi-whatsapp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg w-100">
@@ -50,23 +63,37 @@
                     <div class="col-xl-9 col-lg-10">
                         <div class="w-100 h-100 d-flex align-items-end">
                             <div class="collapse align-items-end navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav fw-medium bg-blur pt-2 gap-2  ms-auto align-items-lg-center align-items-start h-100">
+                                <ul class="navbar-nav fw-medium bg-blur pt-2 gap-2  ms-auto align-items-center h-100">
                                     <li class="nav-item">
                                         <a href="index.html" class="nav-link pb-0">
                                             Главная
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="about.html" class="nav-link pb-0">О компании</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index.html#advantages" class="nav-link pb-0">Преимущества</a>
+                                        <div class="dropdown">
+                                            <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                О компании
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="about.html">О нас</a></li>
+                                              <li><a class="dropdown-item" href="#">Преимущества</a></li>
+                                              <li><a class="dropdown-item" href="#">География продаж</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="nav-item">
                                         <a href="catalog.html" class="nav-link pb-0">Продукция</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html#connection" class="nav-link pb-0">Сотрудничество</a>
+                                        <div class="dropdown">
+                                            <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Сотрудничество
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Партнерам</a></li>
+                                              <li><a class="dropdown-item" href="#">Инвесторам</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="nav-item">
                                         <a href="index.html#contacts" class="nav-link pb-0">Контакты</a>
@@ -202,6 +229,40 @@
                 </div>
             </div>
         </section>
+        <section  class="py-lg-5 py-3 px-sm-0 px-2">
+            <div class="container bg-green rounded-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="w-100 h-100 py-5 text-white">
+                            <div class="row gy-4">
+                                <div class="col-lg-7">
+                                    <div class="w-100 h-100 d-flex text-lg-start text-center flex-column justify-content-center">
+                                        <p class="fw-semibold fs-title-2">Остались вопросы?</p>
+                                        <p class="mt-lg-5 mt-3 fs-paragraph mb-0">Заполните форму обратной связи</p>
+                                        <p class="fw-light fs-span">После отправки, наши специалисты свяжутся с Вами в ближайшее время</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="w-100 h-100">
+                                        <h3 class="text-uppercase fw-bold fs-title-2 mb-lg-5 mb-3 text-center">Обратная связь</h3>
+                                        <form>
+                                            <input type="email" class="form-control w-100 mb-3" placeholder="E-mail">
+                                            <input type="text" class="form-control w-100 mb-3" placeholder="Имя">
+                                            <input type="tel" class="form-control w-100 mb-3" placeholder="Номер телефона">
+                                            <div class="my-lg-5 my-3 d-flex align-items-center form-check">
+                                                <input type="checkbox" class="form-check-input me-3" id="exampleCheck1">
+                                                <label class="form-check-label fs-7">Я соглашаюсь с обработкой персональных данных</label>
+                                              </div>
+                                            <button  class="btn btn-rounded px-5 text-green mt-lg-auto mt-lg-5 mt-3 d-block  text-blue mx-auto">Отправить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="pb-lg-5 pb-3">
             <div class="container">
                 <h5 class="fs-paragraph fw-semibold mb-lg-5 mb-3">Смотрите также</h5>
@@ -250,40 +311,6 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section  class="py-lg-5 py-3 px-sm-0 px-2">
-            <div class="container bg-green rounded-4">
-                <div class="row justify-content-center">
-                    <div class="col-lg-11">
-                        <div class="w-100 h-100 py-5 text-white">
-                            <div class="row gy-4">
-                                <div class="col-lg-7">
-                                    <div class="w-100 h-100 d-flex text-lg-start text-center flex-column justify-content-center">
-                                        <p class="fw-semibold fs-title-2">Остались вопросы?</p>
-                                        <p class="mt-lg-5 mt-3 fs-paragraph mb-0">Заполните форму обратной связи</p>
-                                        <p class="fw-light fs-span">После отправки, наши специалисты свяжутся с Вами в ближайшее время</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="w-100 h-100">
-                                        <h3 class="text-uppercase fw-bold fs-title-2 mb-lg-5 mb-3 text-center">Обратная связь</h3>
-                                        <form>
-                                            <input type="email" class="form-control w-100 mb-3" placeholder="E-mail">
-                                            <input type="text" class="form-control w-100 mb-3" placeholder="Имя">
-                                            <input type="tel" class="form-control w-100 mb-3" placeholder="Номер телефона">
-                                            <div class="my-lg-5 my-3 d-flex align-items-center form-check">
-                                                <input type="checkbox" class="form-check-input me-3" id="exampleCheck1">
-                                                <label class="form-check-label fs-7">Я соглашаюсь с обработкой персональных данных</label>
-                                              </div>
-                                            <button  class="btn btn-rounded px-5 text-green mt-lg-auto mt-lg-5 mt-3 d-block  text-blue mx-auto">Отправить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,27 +400,27 @@
                     <div class="w-100 h-100">
                         <p class="fs-paragraph fw-semibold text-uppercase">Политика приватности</p>
                         <ul class="list-unstyled fs-paragraph-2">
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Защита интеллектуальной собственнсоти
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Официальное уведомление
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Политика листинга продуктов
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Политика и правила
                                 </a>
                             </li>
-                            <li>
+                            <li class="mb-2">
                                 <a href="#">
                                     Сохранение целостности
                                 </a>
