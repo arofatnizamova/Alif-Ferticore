@@ -324,6 +324,21 @@ svg path {
         max-width: 1650px;
     }
 }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    background-color: var(--color-corp);
+    border-color: unset;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: unset;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.nav-tabs {
+    border-bottom: unset;
+}
 @media (max-width: 1400px){
     .header-side-container{
         clip-path: polygon(32% 0, 100% 0, 100% 100%, 36% 100%);
