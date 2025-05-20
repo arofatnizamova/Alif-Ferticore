@@ -121,11 +121,17 @@ a{
 .hover-green:hover{
     background: var(--color-green);
 }
-.hover-green:hover p{
+.hover-green:hover p, .hover-green:hover h6 {
     color: white;
 }
 .hover-green:hover .number{
     color: var(--color-green);
+    background: white;
+}
+.hover-green:hover img{
+    filter: unset;
+}
+.hover-green:hover .img-bg{
     background: white;
 }
 .info-container{
@@ -339,6 +345,35 @@ svg path {
 .nav-tabs {
     border-bottom: unset;
 }
+.img-bg{
+    width: fit-content;
+    background: var(--color-green);
+}
+.img-hover{
+    filter: contrast(0%) brightness(2);
+}
+.icon-size-2{
+    width: 40px;
+    height: 40px;
+}
+.left-rounded{
+    border-radius: 30px 0 0 30px;
+}
+.right-rounded{
+    border-radius: 0px 40px 40px 0px;
+}
+.icon-right{
+    top: -50px;
+    right: -50px;
+}
+.icon-left{
+    top: -50px;
+    left: -50px;
+}
+.icon-size-3{
+    height: 80px;
+    width: 80px;
+}
 @media (max-width: 1400px){
     .header-side-container{
         clip-path: polygon(32% 0, 100% 0, 100% 100%, 36% 100%);
@@ -382,6 +417,21 @@ svg path {
     .bg-title {
         bottom: -30%;
     }
+    .img-banner-2{
+        height: 400px;
+    }
+    .icon-right{
+        top: -30px;
+        right: -30px;
+    }
+    .icon-left{
+        top: -30px;
+        left: -30px;
+    }
+    .icon-size-3{
+        height: 40px;
+        width: 40px;
+    }
 }
 @media (max-width: 576px){
     .logo{
@@ -407,5 +457,17 @@ svg path {
     }
     .news-card{
         border-radius: 24px;
+    }
+    .icon-right{
+        top: -10px;
+        right: -10px;
+    }
+    .icon-left{
+        top: -10px;
+        left: -10px;
+    }
+    .icon-size-3{
+        height: 20px;
+        width: 20px;
     }
 }
