@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIF FERTICORE</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" media="all">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-side-container d-xl-block d-none bg-black text-white py-2">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8">
+                        <div class="w-100 h-100 d-flex justify-content-between align-items-center">
+                            <a href="#" class="d-flex align-items-center">
+                                <i class="bi bi-filetype-pdf fs-3 me-2"></i>
+                                <span class="fw-light fs-6">Скачать каталог продукции в PDF</span>
+                            </a>
+                            <ul class="list-unstyled d-flex fs-4  gap-4 mb-0">
+                                <li>
+                                    <a href="#"><i class="bi bi-wechat"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-telegram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi bi-whatsapp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container pb-3">
+                <div class="row gx-0 justify-content-between w-100">
+                    <div class="col-xl-3 col-lg-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="icons/logo.svg" alt="Logo" class="logo img-fluid">
+                            </a>
+                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon main-page-toggler navbar-toggler-custom"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-10">
+                        <div class="w-100 h-100 d-flex align-items-end">
+                            <div class="collapse align-items-end navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav fw-medium bg-blur pt-2 gap-2  ms-auto align-items-center h-100">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link pb-0">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                О компании
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="about.html">О нас</a></li>
+                                              <li><a class="dropdown-item" href="advantages.html">Преимущества</a></li>
+                                              <li><a class="dropdown-item" href="geography.html">География продаж</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="catalog.html" class="nav-link pb-0">Продукция</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Сотрудничество
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="partners.html">Партнерам</a></li>
+                                              <li><a class="dropdown-item" href="investors.html">Инвесторам</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="news.html" class="nav-link pb-0">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contacts.html" class="nav-link pb-0">Контакты</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown">
+                                    <button class="btn pb-0 nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        РУ
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">UZ</a></li>
+                                      <li><a class="dropdown-item" href="#">EN</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3">
+            <div class="position-relative">
+                <img src="images/news/bg.png" alt="" class="img-fluid object-fit-cover w-100">
+                <p class="fs-title-2 text-white fw-semibold rounded-4 bg-green bg-title position-absolute py-3 w-fit-content">Преимущества</p>
+            </div>
+            <div class="container pt-sm-5">
+                <div class="row my-lg-5 gy-4 mt-5 mb-3">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 shadow-3 news-card fs-paragraph-2 ">
+                            <div class="d-flex align-items-center p-3  h-custom">
+                                <div class="icon-bg bg-green me-2">
+                                    <img src="icons/advantages/1.svg" alt="" class="icon-size">
+                                </div>
+                                <p class="fw-semibold  mb-0  two-line">Широкий ассортимент под любые потребности</p>
+                            </div>
+                            <img src="images/news/1.png" alt="" class="img-fluid object-fit-cover w-100">
+                            <div class="p-4 fs-span">
+                                <p class="">Благодаря сотрудничеству с производителями по всему миру мы предлагаем удобрения для любых культур, почв и климатических условий.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 shadow-3 news-card fs-paragraph-2 ">
+                            <div class="d-flex align-items-center p-3  h-custom">
+                                <div class="icon-bg bg-green me-2">
+                                    <img src="icons/advantages/2.svg" alt="" class="icon-size">
+                                </div>
+                                <p class="fw-semibold  mb-0  two-line">Стабильные поставки круглый год</p>
+                            </div>
+                            <img src="images/news/2.png" alt="" class="img-fluid object-fit-cover w-100">
+                            <div class="p-4 fs-span">
+                                <p>Международная логистика и обширная складская сеть обеспечивают своевременные поставки вне зависимости от сезона и региона.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 shadow-3 news-card fs-paragraph-2 ">
+                            <div class="d-flex align-items-center p-3  h-custom">
+                                <div class="icon-bg bg-green me-2">
+                                    <img src="icons/advantages/3.svg" alt="" class="icon-size">
+                                </div>
+                                <p class="fw-semibold  mb-0  two-line">Конкурентные цены без потери качества</p>
+                            </div>
+                            <img src="images/news/3.png" alt="" class="img-fluid object-fit-cover w-100">
+                            <div class="p-4 fs-span">
+                                <p>Мы закупаем большие объёмы напрямую у производителей, что позволяет нам удерживать выгодные цены и предлагать отличное соотношение «цена–качество».</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 shadow-3 news-card fs-paragraph-2 ">
+                            <div class="d-flex align-items-center p-3  h-custom">
+                                <div class="icon-bg bg-green me-2">
+                                    <img src="icons/advantages/4.svg" alt="" class="icon-size">
+                                </div>
+                                <p class="fw-semibold  mb-0  two-line">Гарантия качества продукции</p>
+                            </div>
+                            <img src="images/news/4.png" alt="" class="img-fluid object-fit-cover w-100">
+                            <div class="p-4 fs-span">
+                                <p>Вся продукция проходит международную сертификацию и строгий контроль, что гарантирует эффективность и безопасность для ваших культур.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 shadow-3 news-card fs-paragraph-2 ">
+                            <div class="d-flex align-items-center p-3  h-custom">
+                                <div class="icon-bg bg-green me-2">
+                                    <img src="icons/advantages/5.svg" alt="" class="icon-size">
+                                </div>
+                                <p class="fw-semibold  mb-0  two-line">Персональный подход и агрономическая поддержка</p>
+                            </div>
+                            <img src="images/news/5.png" alt="" class="img-fluid object-fit-cover w-100">
+                            <div class="p-4 fs-span">
+                                <p>Мы учитываем особенности вашего хозяйства и предоставляем консультации по выбору удобрений и технологии их применения.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 shadow-3 news-card fs-paragraph-2 ">
+                            <div class="d-flex align-items-center p-3  h-custom">
+                                <div class="icon-bg bg-green me-2">
+                                    <img src="icons/advantages/6.svg" alt="" class="icon-size">
+                                </div>
+                                <p class="fw-semibold  mb-0  two-line">Долгосрочное сотрудничество и надёжность</p>
+                            </div>
+                            <img src="images/news/6.png" alt="" class="img-fluid object-fit-cover w-100">
+                            <div class="p-4 fs-span">
+                                <p>Работая с нами, вы получаете не просто поставщика, а партнёра, на которого можно положиться в любых условиях.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3 bg-footer text-white">
+        <div class="container">
+            <div class="row gy-3 mb-lg-5">
+                <div class="col-lg-4 col-6">
+                    <div class="w-100 h-100">
+                        <p class="fs-paragraph fw-semibold text-uppercase">О нас</p>
+                        <ul class="list-unstyled fs-paragraph-2">
+                            <li>
+                                <a href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    О компании
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#advantages">
+                                    Преимущества
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <div class="w-100 h-100">
+                        <p class="fs-paragraph fw-semibold text-uppercase">Навигация</p>
+                        <ul class="list-unstyled fs-paragraph-2">
+                            <li>
+                                <a href="catalog.html">
+                                    Продукция
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#connection">
+                                    Сотрудничество
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#contacts">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="w-100 h-100 fs-paragraph-2">
+                        <p class="fs-paragraph fw-semibold text-uppercase">Контакты</p>
+                        <address>
+                            <p class="mb-0">Адрес: Здание West Burry Tower, участок №: 170-0, Business Bay, Офис № 304, 3-й этаж
+                                Дубай, ОАЭ</p>
+                        </address>
+                        <p class="mb-0">Контактные номера:</p>
+                        <div class="d-flex align-items-lg-end align-items-start mb-2 flex-lg-row flex-column justify-content-lg-between">
+                                <a href="tel:+971528567123"><i class="bi bi-telephone-fill  fs-5  me-2"></i>
+                                    <span>+971 52 856 7123</span></a>
+                                <a href="tel:+971525066514"><i class="bi bi-telephone-fill  fs-5  me-2"></i>
+                                    <span>+971 52 506 6514</span></a>
+                        </div>
+                        <span>E-mail: <a href="mailto:export@alifferticore.ae">export@alifferticore.ae</a> <br>
+                           <a href="mailto:alifferticoreexport@gmail.com">alifferticoreexport@gmail.com</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-lg-flex d-none mb-lg-5">
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <p class="fs-paragraph text-uppercase">
+                            Скачайте наше бесплатное приложение <span class="fw-semibold text-corp">alifferticore</span> 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="w-100 h-100 d-flex justify-content-center">
+                        <img src="images/home-page/phone.png" alt="" class="img-fluid object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <p class="fs-paragraph fw-semibold text-uppercase">Политика приватности</p>
+                        <ul class="list-unstyled fs-paragraph-2">
+                            <li class="mb-2">
+                                <a href="#">
+                                    Защита интеллектуальной собственнсоти
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    Официальное уведомление
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    Политика листинга продуктов
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    Политика и правила
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    Сохранение целостности
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-lg-flex d-none mb-lg-5">
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <p class="fs-paragraph fw-semibold text-uppercase">Языки</p>
+                            <ul class="list-unstyled fs-paragraph-2 d-flex flex-column  gap-3 mb-0">
+                                <li>
+                                    <a href="#"><span class="rounded-1 fi fi-gb me-3 fs-5"></span>
+                                        Английский </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="rounded-1 fi fi-ru me-3 fs-5"></span>
+                                        Русский </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="rounded-1 fi fi-ae me-3 fs-5"></span>
+                                        Арабский </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="rounded-1 fi fi-cn me-3 fs-5"></span>
+                                        Китайский </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <p class="fs-paragraph fw-semibold text-uppercase">Следите за нами</p>
+                            <div class="d-flex">
+                                <ul class="list-unstyled fs-paragraph-2 d-flex flex-column me-5  gap-3 mb-0">
+                                    <li>
+                                        <a href="#"><i class="bi bi-instagram fs-4 me-2"></i>Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-twitter-x fs-4 me-2"></i>
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-sina-weibo fs-4 me-2"></i>
+                                            Weibo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-tiktok fs-4 me-2"></i>
+                                            Tik Tok
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled fs-paragraph-2 d-flex flex-column  gap-3 mb-0">
+                                    <li>
+                                        <a href="#"><i class="bi bi-google fs-4 me-2"></i>Google</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-youtube fs-4 me-2"></i>
+                                            YouTube
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-reddit fs-4 me-2"></i>
+                                            Reddit
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="bi bi-linkedin fs-4 me-2"></i>
+                                            LinkedIn
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <p class="fs-paragraph fw-semibold text-uppercase">Социальные сети</p>
+                            <ul class="list-unstyled fs-paragraph-2 d-flex flex-column  gap-3 mb-0">
+                                <li>
+                                    <a href="#"><i class="bi  bi-wechat fs-4 me-2"></i>
+                                        WeChat </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-facebook  fs-4 me-2"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-telegram fs-4 me-2"></i>
+                                        Telegram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="bi bi-whatsapp fs-4 me-2"></i>
+                                        WhatsApp
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="fs-paragraph text-uppercase d-lg-block d-none mb-5 fw-semibold">
+                Они доверяют нам
+            </p>
+            <div class="row d-lg-flex d-none row-cols-6 gx-5">
+                <div class="col">
+                    <div class="w-100 h-100">
+                        <img src="icons/visa.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 h-100">
+                        <img src="icons/visa.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 h-100">
+                        <img src="icons/visa.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 h-100">
+                        <img src="icons/visa.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 h-100">
+                        <img src="icons/visa.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 h-100">
+                        <img src="icons/visa.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <p class="opacity-75 fs-paragraph-2 mt-5 text-center mb-0">(c) 2025 Alif FertiCore. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

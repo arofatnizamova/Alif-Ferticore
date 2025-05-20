@@ -279,9 +279,6 @@ body{
     padding: 0px 5px;
     font-size: 1.2rem;
 }
-
-
-
 svg path {
     cursor: pointer;
 }
@@ -389,5 +386,8 @@ svg path {
     }
     .bg-title{
         padding: 10px 50px;
+    }
+    .news-card{
+        border-radius: 24px;
     }
 }
