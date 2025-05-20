@@ -21,6 +21,9 @@ a{
 .fs-title-2{
     font-size: clamp(1.875rem, 1.725rem + 0.75vw, 2.625rem);
 }
+.fs-title-3{
+    font-size: clamp(1.375rem, -0.3438rem + 5.5vw, 2.75rem);
+}
 .nav-link{
    transition: all 0.3s ease;
 }
